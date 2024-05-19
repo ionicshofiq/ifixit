@@ -27,15 +27,18 @@ const Navbar = () => {
 					</li>
 				</ul>
 			</li>
-			<li className='group relative'>
+			<li className='group/outer relative'>
 				<a className='cursor-pointer'>
 					SHOP
 					<FaChevronDown />
 				</a>
-				<ul className='p-2 group-hover:block hidden absolute top-8 w-56'>
-					<li className='group relative'>
-						<a className='cursor-pointer'>By Device</a>
-						<ul className='p-2 group-hover:block hidden absolute left-full top-0'>
+				<ul className='p-2 group-hover/outer:block hidden absolute top-8 w-56'>
+					<li className='group/inner relative'>
+						<a className='cursor-pointer flex justify-between'>
+							By Device
+							<FaChevronDown />
+						</a>
+						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56'>
 							<li>
 								<a>iPhone</a>
 							</li>
@@ -50,70 +53,71 @@ const Navbar = () => {
 							</li>
 						</ul>
 					</li>
-					<li>
-						<details>
-							<summary>By Category</summary>
-							<ul className='p-2'>
-								<li>
-									<a>case & protection</a>
-								</li>
-								<li>
-									<a>Display</a>
-								</li>
-								<li>
-									<a>Battery</a>
-								</li>
-								<li>
-									<a>Headphones & Speaker</a>
-								</li>
-								<li>
-									<a>Power and Cables</a>
-								</li>
-								<li>
-									<a>Mouse & keypad</a>
-								</li>
-								<li>
-									<a>Wearables</a>
-								</li>
-							</ul>
-						</details>
+					<li className='group/inner relative'>
+						<a className='cursor-pointer flex justify-between'>
+							By Category <FaChevronDown />
+						</a>
+						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56'>
+							<li>
+								<a>case & protection</a>
+							</li>
+							<li>
+								<a>Display</a>
+							</li>
+							<li>
+								<a>Battery</a>
+							</li>
+							<li>
+								<a>Headphones & Speaker</a>
+							</li>
+							<li>
+								<a>Power and Cables</a>
+							</li>
+							<li>
+								<a>Mouse & keypad</a>
+							</li>
+							<li>
+								<a>Wearables</a>
+							</li>
+						</ul>
 					</li>
-					<li>
-						<details>
-							<summary>By Brands</summary>
-							<ul className='p-2'>
-								<li>
-									<a>Apple</a>
-								</li>
-								<li>
-									<a>Anker</a>
-								</li>
-								<li>
-									<a>Baykron</a>
-								</li>
-								<li>
-									<a>iFixit</a>
-								</li>
-								<li>
-									<a>Mcdodo</a>
-								</li>
-								<li>
-									<a>Aspor</a>
-								</li>
-								<li>
-									<a>JBL</a>
-								</li>
-								<li>
-									<a>UGREEN</a>
-								</li>
-								<li>
-									<a>ACEFAST</a>
-								</li>
-								<li>
-									<a>Zeblaze</a>
-								</li>
-							</ul>
-						</details>
+					<li className='group/inner relative'>
+						<a className='cursor-pointer flex justify-between'>
+							By Brands
+							<FaChevronDown />
+						</a>
+						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56'>
+							<li>
+								<a>Apple</a>
+							</li>
+							<li>
+								<a>Anker</a>
+							</li>
+							<li>
+								<a>Baykron</a>
+							</li>
+							<li>
+								<a>iFixit</a>
+							</li>
+							<li>
+								<a>Mcdodo</a>
+							</li>
+							<li>
+								<a>Aspor</a>
+							</li>
+							<li>
+								<a>JBL</a>
+							</li>
+							<li>
+								<a>UGREEN</a>
+							</li>
+							<li>
+								<a>ACEFAST</a>
+							</li>
+							<li>
+								<a>Zeblaze</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</li>
