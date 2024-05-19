@@ -38,7 +38,7 @@ const Navbar = () => {
 							By Device
 							<FaChevronDown />
 						</a>
-						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56'>
+						<ul className='p-2 group-hover/inner:block hidden absolute left-full -mx-1 top-0 w-56'>
 							<li>
 								<a>iPhone</a>
 							</li>
@@ -57,7 +57,7 @@ const Navbar = () => {
 						<a className='cursor-pointer flex justify-between'>
 							By Category <FaChevronDown />
 						</a>
-						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56'>
+						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56 -mx-1'>
 							<li>
 								<a>case & protection</a>
 							</li>
@@ -86,7 +86,7 @@ const Navbar = () => {
 							By Brands
 							<FaChevronDown />
 						</a>
-						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56'>
+						<ul className='p-2 group-hover/inner:block hidden absolute left-full top-0 w-56 -mx-1'>
 							<li>
 								<a>Apple</a>
 							</li>
