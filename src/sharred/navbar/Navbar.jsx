@@ -1,3 +1,4 @@
+import { FaChevronDown } from 'react-icons/fa';
 import logoImage from '../../assets/logo.png';
 
 const Navbar = () => {
@@ -6,115 +7,115 @@ const Navbar = () => {
 			<li>
 				<a>HOME</a>
 			</li>
-			<li>
-				<details>
-					<summary>SERVICES</summary>
-					<ul className='p-2'>
-						<li>
-							<a>iPhone Repair</a>
-						</li>
-						<li>
-							<a>iPad Repair</a>
-						</li>
-						<li>
-							<a>Mac Repair</a>
-						</li>
-						<li>
-							<a>Apple Watch Repair</a>
-						</li>
-					</ul>
-				</details>
+			<li className='group relative'>
+				<a className='cursor-pointer'>
+					SERVICES
+					<FaChevronDown />
+				</a>
+				<ul className='p-2 w-56 rounded-none group-hover:block absolute top-8 hidden'>
+					<li>
+						<a>iPhone Repair</a>
+					</li>
+					<li>
+						<a>iPad Repair</a>
+					</li>
+					<li>
+						<a>Mac Repair</a>
+					</li>
+					<li>
+						<a>Apple Watch Repair</a>
+					</li>
+				</ul>
 			</li>
-			<li>
-				<details>
-					<summary>SHOP</summary>
-					<ul className='p-2'>
-						<li>
-							<details>
-								<summary>By Device</summary>
-								<ul className='p-2'>
-									<li>
-										<a>iPhone</a>
-									</li>
-									<li>
-										<a>iPad</a>
-									</li>
-									<li>
-										<a>Macbook</a>
-									</li>
-									<li>
-										<a>Apple Watch</a>
-									</li>
-								</ul>
-							</details>
-						</li>
-						<li>
-							<details>
-								<summary>By Category</summary>
-								<ul className='p-2'>
-									<li>
-										<a>case & protection</a>
-									</li>
-									<li>
-										<a>Display</a>
-									</li>
-									<li>
-										<a>Battery</a>
-									</li>
-									<li>
-										<a>Headphones & Speaker</a>
-									</li>
-									<li>
-										<a>Power and Cables</a>
-									</li>
-									<li>
-										<a>Mouse & keypad</a>
-									</li>
-									<li>
-										<a>Wearables</a>
-									</li>
-								</ul>
-							</details>
-						</li>
-						<li>
-							<details>
-								<summary>By Brands</summary>
-								<ul className='p-2'>
-									<li>
-										<a>Apple</a>
-									</li>
-									<li>
-										<a>Anker</a>
-									</li>
-									<li>
-										<a>Baykron</a>
-									</li>
-									<li>
-										<a>iFixit</a>
-									</li>
-									<li>
-										<a>Mcdodo</a>
-									</li>
-									<li>
-										<a>Aspor</a>
-									</li>
-									<li>
-										<a>JBL</a>
-									</li>
-									<li>
-										<a>UGREEN</a>
-									</li>
-									<li>
-										<a>ACEFAST</a>
-									</li>
-									<li>
-										<a>Zeblaze</a>
-									</li>
-								</ul>
-							</details>
-						</li>
-					</ul>
-				</details>
+			<li className='group relative'>
+				<a className='cursor-pointer'>
+					SHOP
+					<FaChevronDown />
+				</a>
+				<ul className='p-2 group-hover:block hidden absolute top-8 w-56'>
+					<li className='group relative'>
+						<a className='cursor-pointer'>By Device</a>
+						<ul className='p-2 group-hover:block hidden absolute left-full top-0'>
+							<li>
+								<a>iPhone</a>
+							</li>
+							<li>
+								<a>iPad</a>
+							</li>
+							<li>
+								<a>Macbook</a>
+							</li>
+							<li>
+								<a>Apple Watch</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<details>
+							<summary>By Category</summary>
+							<ul className='p-2'>
+								<li>
+									<a>case & protection</a>
+								</li>
+								<li>
+									<a>Display</a>
+								</li>
+								<li>
+									<a>Battery</a>
+								</li>
+								<li>
+									<a>Headphones & Speaker</a>
+								</li>
+								<li>
+									<a>Power and Cables</a>
+								</li>
+								<li>
+									<a>Mouse & keypad</a>
+								</li>
+								<li>
+									<a>Wearables</a>
+								</li>
+							</ul>
+						</details>
+					</li>
+					<li>
+						<details>
+							<summary>By Brands</summary>
+							<ul className='p-2'>
+								<li>
+									<a>Apple</a>
+								</li>
+								<li>
+									<a>Anker</a>
+								</li>
+								<li>
+									<a>Baykron</a>
+								</li>
+								<li>
+									<a>iFixit</a>
+								</li>
+								<li>
+									<a>Mcdodo</a>
+								</li>
+								<li>
+									<a>Aspor</a>
+								</li>
+								<li>
+									<a>JBL</a>
+								</li>
+								<li>
+									<a>UGREEN</a>
+								</li>
+								<li>
+									<a>ACEFAST</a>
+								</li>
+								<li>
+									<a>Zeblaze</a>
+								</li>
+							</ul>
+						</details>
+					</li>
+				</ul>
 			</li>
 			<li>
 				<a>BLOG</a>
@@ -132,11 +133,7 @@ const Navbar = () => {
 		<div className='navbar bg-base-100 max-w-screen-xl mx-auto'>
 			<div className='navbar-start'>
 				<div className='dropdown'>
-					<div
-						tabIndex={0}
-						role='button'
-						className='btn btn-ghost lg:hidden'
-					>
+					<div tabIndex={0} role='button' className='lg:hidden'>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							className='h-5 w-5'
@@ -154,7 +151,7 @@ const Navbar = () => {
 					</div>
 					<ul
 						tabIndex={0}
-						className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'
+						className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow w-52'
 					>
 						{navLinks}
 					</ul>
