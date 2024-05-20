@@ -3,8 +3,8 @@ import card1 from '../../assets/card1.png';
 
 const Card = () => {
 	return (
-		<div className='flex gap-3 justify-center items-center py-10 relative'>
-			<div className='w-44 hover:top-2 hover:absolute rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
+		<div className='flex gap-3 justify-center items-center py-10'>
+			<div className='w-44 hover:-translate-y-3 duration-5j00 rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
 				<div
 					className='w-24 cardBackground'
 					style={{ backgroundImage: `url(${cardBackground})` }}
@@ -13,7 +13,7 @@ const Card = () => {
 				</div>
 				<div className='font-bold text-lg'>iPhone Repair</div>
 			</div>
-			{/* <div className='w-44 hover:top-2 hover:absolute rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
+			<div className='w-44 hover:-translate-y-3 duration-5j00 rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
 				<div
 					className='w-24 cardBackground'
 					style={{ backgroundImage: `url(${cardBackground})` }}
@@ -22,7 +22,7 @@ const Card = () => {
 				</div>
 				<div className='font-bold text-lg'>iPhone Repair</div>
 			</div>
-			<div className='w-44 hover:top-2 hover:absolute rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
+			<div className='w-44 hover:-translate-y-3 duration-5j00 rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
 				<div
 					className='w-24 cardBackground'
 					style={{ backgroundImage: `url(${cardBackground})` }}
@@ -31,7 +31,7 @@ const Card = () => {
 				</div>
 				<div className='font-bold text-lg'>iPhone Repair</div>
 			</div>
-			<div className='w-44 hover:top-2 hover:absolute rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
+			<div className='w-44 hover:-translate-y-3 duration-5j00 rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
 				<div
 					className='w-24 cardBackground'
 					style={{ backgroundImage: `url(${cardBackground})` }}
@@ -40,7 +40,7 @@ const Card = () => {
 				</div>
 				<div className='font-bold text-lg'>iPhone Repair</div>
 			</div>
-			<div className='w-44 hover:top-2 hover:absolute rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
+			<div className='w-44 hover:-translate-y-3 duration-5j00 rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
 				<div
 					className='w-24 cardBackground'
 					style={{ backgroundImage: `url(${cardBackground})` }}
@@ -49,7 +49,7 @@ const Card = () => {
 				</div>
 				<div className='font-bold text-lg'>iPhone Repair</div>
 			</div>
-			<div className='w-44 hover:top-2 hover:absolute rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
+			<div className='w-44 hover:-translate-y-3 duration-5j00 rounded-md border-slate-100 border-2 h-56 my-12 shadow-xl flex flex-col justify-between py-8 items-center '>
 				<div
 					className='w-24 cardBackground'
 					style={{ backgroundImage: `url(${cardBackground})` }}
@@ -57,7 +57,7 @@ const Card = () => {
 					<img className='p-3' src={card1} alt='' />
 				</div>
 				<div className='font-bold text-lg'>iPhone Repair</div>
-			</div> */}
+			</div>
 		</div>
 	);
 };
