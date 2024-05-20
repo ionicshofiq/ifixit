@@ -1,6 +1,7 @@
 import Navbar from './sharred/navbar/Navbar';
 import HeroBanner from './components/heroBanner/HeroBanner';
 import Card from './components/card/Card';
+import Fixit from './components/fixit/Fixit';
 
 
 
@@ -10,7 +11,8 @@ const App = () => {
         <div>
             <Navbar />
             <HeroBanner />
-            <Card/>
+            <Card />
+            <Fixit/>
          
 
         </div>
